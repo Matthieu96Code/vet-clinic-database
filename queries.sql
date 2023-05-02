@@ -1,5 +1,7 @@
 /*Queries that provide answers to the questions from all projects.*/
 
+-- Queries manipulation in millestone 1 of the the project
+
 -- Find all animals whose name ends in "mon".
 SELECT * from animals WHERE name LIKE '%mon';
 
@@ -23,3 +25,13 @@ SELECT * from animals WHERE name NOT IN ('Gabumon');
 
 -- Find all animals with a weight between 10.4kg and 17.3kg (including the animals with the weights that equals precisely 10.4kg or 17.3kg)
 SELECT * from animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
+
+-- Queries manipulation in millestone 2 of the the project
+
+-- setting the species column to unspecified and rollback.
+BEGIN;
+ALTER TABLE animals RENAME COLUMN species TO unspecified;
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
+
