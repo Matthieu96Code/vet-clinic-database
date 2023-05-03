@@ -56,4 +56,3 @@ UPDATE animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blosso
 UPDATE animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
 COMMIT;
 SELECT * FROM animals;
-
