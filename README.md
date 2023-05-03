@@ -48,6 +48,8 @@
 
 - **vet_clinic database**
 - **animals table**
+- **owners table**
+- **species table**
 - **inserted data in the table**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -131,7 +133,7 @@ You can deploy this project using:
 
 - [ ] **update animals table**
 - [ ] **add join table for visits**
-- [ ] **add database shema diagram**
+- [ ] **add database schema diagram**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
