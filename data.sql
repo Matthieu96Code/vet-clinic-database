@@ -39,3 +39,11 @@ INSERT INTO owners (full_name, age) VALUES ('Jodie Whittaker', 38);
 
 INSERT INTO species  (name) VALUES ('Pokemon');
 INSERT INTO species  (name) VALUES ('Digimon');
+
+-- Modify the inserted animals so it includes the species_id value
+BEGIN;
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE species_id IS NULL;
+COMMIT;
+SELECT * FROM animals;
+
