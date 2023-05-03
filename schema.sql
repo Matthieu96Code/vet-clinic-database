@@ -14,3 +14,11 @@ CREATE TABLE animals(
 
 -- Add a column species of type string to animals table
 ALTER TABLE animals ADD species VARCHAR(250);
+
+-- Create a table named owners with the given columns
+CREATE TABLE owners(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  full_name VARCHAR(250),
+  age INT,
+  PRIMARY KEY(id)
+);
