@@ -25,3 +25,12 @@ INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) 
 INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Blossom', '1998-10-13', 17.0, '1', 3);
 
 INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Ditto', '2022-05-14', 22.0, '1', 4);
+
+-- Insert data into owners table in millestone 3 of the the project
+
+INSERT INTO owners (full_name, age) VALUES ('Sam Smith', 34);
+INSERT INTO owners (full_name, age) VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (full_name, age) VALUES ('Bob', 45);
+INSERT INTO owners (full_name, age) VALUES ('Melody Pond', 77);
+INSERT INTO owners (full_name, age) VALUES ('Dean Winchester', 14);
+INSERT INTO owners (full_name, age) VALUES ('Jodie Whittaker', 38);
