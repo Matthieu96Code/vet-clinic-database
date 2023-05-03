@@ -22,3 +22,10 @@ CREATE TABLE owners(
   age INT,
   PRIMARY KEY(id)
 );
+
+-- Create a table named spicies with the given columns
+CREATE TABLE species(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(250),
+  PRIMARY KEY(id)
+);
