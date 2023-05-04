@@ -63,3 +63,10 @@ INSERT INTO vets (name, age, date_of_graduation) VALUES ('William Tatcher', 45, 
 INSERT INTO vets (name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-01-17');
 INSERT INTO vets (name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, '1981-05-04');
 INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2008-06-08');
+
+-- Insert data into specializations table in millestone 4 of the the project
+
+INSERT INTO specializations (vets_id, species_id) VALUES (1, 1);
+INSERT INTO specializations (vets_id, species_id) VALUES (3, 1);
+INSERT INTO specializations (vets_id, species_id) VALUES (3, 2);
+INSERT INTO specializations (vets_id, species_id) VALUES (4, 2);
