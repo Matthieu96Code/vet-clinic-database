@@ -51,6 +51,7 @@
 - **owners table**
 - **species table**
 - **inserted data in the table**
+- **add "join table" for visits**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +133,7 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **update animals table**
-- [ ] **add join table for visits**
+- [ ] **database performance audit.**
 - [ ] **add database schema diagram**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
