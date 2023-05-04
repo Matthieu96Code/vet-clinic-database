@@ -99,3 +99,20 @@ SELECT animals.name, full_name, escape_attempts FROM animals JOIN owners ON anim
 
 -- Who owns the most animals?
 SELECT full_name, COUNT(*) as most_animals FROM animals JOIN owners ON animals.owner_id = owners.id GROUP BY full_name ORDER BY COUNT(*) DESC LIMIT 1;
+
+
+-- Write queries on the join tables.
+-- Who was the last animal seen by William Tatcher?
+SELECT animals.name, vets.name, date_of_visit FROM vets JOIN visits ON vets.id = visits.vets_id JOIN animals ON animals.id = visits.animals_id WHERE vets.name IN ('William Tatcher') ORDER BY date_of_visit DESC LIMIT 1;
+
+-- How many different animals did Stephanie Mendez see?
+SELECT vets.name, COUNT(specializations.species_id) FROM vets JOIN specializations ON vets.id = specializations.vets_id WHERE vets.name IN ('Stephanie Mendez') GROUP BY vets.name;
+
+-- List all vets and their specialties, including vets with no specialties.
+SELECT vets.name, species.name FROM vets LEFT JOIN specializations ON vets.id = specializations.vets_id LEFT JOIN species ON specializations.species_id = species.id;
+
+-- List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+SELECT animals.name, vets.name, date_of_visit FROM visits JOIN vets ON vets.id = visits.vets_id JOIN animals ON animals.id = visits.animals_id WHERE vets.name IN ('Stephanie Mendez') AND date_of_visit BETWEEN '2020-04-01' AND '2020-08-30';
+
+-- What animal has the most visits to vets?
+SELECT animals.name, COUNT(date_of_visit) as visit_count FROM visits JOIN animals ON visits.animals_id = animals.id GROUP BY animals.name ORDER BY COUNT(date_of_visit) DESC LIMIT 1;
