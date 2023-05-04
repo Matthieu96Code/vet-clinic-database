@@ -37,3 +37,13 @@ ALTER TABLE animals DROP species;
 ALTER TABLE animals ADD species_id INT REFERENCES species(id);
 -- Add column owner_id which is a foreign key referencing the owners table
 ALTER TABLE animals ADD owner_id INT REFERENCES owners(id);
+
+-- Millestone 4 join table
+-- Create a table named vets with the given columns
+CREATE TABLE vets(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(250),
+  age INT,
+  date_of_graduation DATE,
+  PRIMARY KEY(id)
+);
