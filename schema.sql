@@ -47,3 +47,10 @@ CREATE TABLE vets(
   date_of_graduation DATE,
   PRIMARY KEY(id)
 );
+
+-- Create a join table specializations relationship between the tables species and vets
+CREATE TABLE specializations(
+  species_id INT REFERENCES species(id),
+  vets_id INT REFERENCES vets(id),
+  PRIMARY KEY(species_id, vets_id)
+);
