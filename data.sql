@@ -56,3 +56,10 @@ UPDATE animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blosso
 UPDATE animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
 COMMIT;
 SELECT * FROM animals;
+
+-- Insert data into vets table in millestone 4 of the the project
+
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('William Tatcher', 45, '2000-04-23');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-01-17');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, '1981-05-04');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2008-06-08');
