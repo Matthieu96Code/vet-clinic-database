@@ -93,3 +93,7 @@ INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, '2020-02-2
 INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, '2020-08-03');
 INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (10, 4, '2020-05-24');
 INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (10, 1, '2021-01-11');
+
+BEGIN;
+UPDATE visits SET vets_id = 3 WHERE date_of_visit IN ('2020-05-24') AND animals_id = 10;
+COMMIT;
